@@ -3,4 +3,10 @@
     src: url(../assets/fonts/AppleSDGothicNeoM.ttf)
 }
 
+@font-face {
+    font-family: 몬세라트;
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
+$montserrat : '몬세라트';
 $sandolGodic : 'Apple산돌고딕';
