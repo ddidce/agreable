@@ -47,10 +47,6 @@ const Feature = () => {
             >
                 {featureItems}
             </Carousel>
-
-            <div className={cx('list_container')}>
-                <h1 className={cx('list_title')}>윙잇 MADE</h1>
-            </div>
         </>
     );
 };

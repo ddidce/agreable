@@ -1,0 +1,25 @@
+@import '../../styles/reset.scss';
+@import '../../styles/Font.scss';
+
+.list_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $montserrat;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 5rem;
+}
+
+.list_container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .list_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

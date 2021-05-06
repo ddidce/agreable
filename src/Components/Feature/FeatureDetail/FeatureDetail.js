@@ -6,7 +6,7 @@ import Styles from './style.module.scss';
 const FeatureDetail = ({ key, featureData }) => {
     const cx = classNames.bind(Styles);
 
-    console.log(featureData);
+    // console.log(featureData);
     let URL = `https://image.wingeat.com/${featureData.image}`;
     return (
         <div key={key} className={cx('feature_wrap')}>
