@@ -1,0 +1,61 @@
+@import '../../../styles/Font.scss';
+@import '../../../styles/reset.scss';
+
+.cartItem_wrap {
+    width: 100%;
+    max-width: 1500px;
+    // margin: 0 auto;
+    display: flex;
+    padding: 2em 0 2em 2em;
+    // border: 1px solid #424242;
+    margin-bottom: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+    
+    .cartItem_card {
+        width: 100%;
+        display: flex;
+
+        .cartItem_img {
+            width: 120px;
+        }
+    
+        .cartItem_desc {
+            display: flex;
+            flex-direction: column;
+            padding: 0 0 0 1em;
+            justify-content: center;
+        
+            .cartItem_name {
+                
+                padding: .8em .5em 0 0;
+                margin-bottom: .5em;
+                font-size: 1em;
+                line-height: 1.4;
+                word-break: break-all;
+                white-space: normal;
+                min-height: 30px;
+                max-height: 55px;
+                font-family: $montserrat;
+            }
+            .cartItem_price {
+                padding: .5em 0 ;
+                font-weight: 700;
+                font-size: 1em;
+                font-family: $montserrat;
+            }
+        }
+    }
+
+    
+
+    .cartItem_totalprice {
+        width: 45%;
+        font-weight: 700;
+        padding: 0 3em 0 0;
+        font-size: 1.3em;
+        font-family: $montserrat;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

@@ -17,10 +17,6 @@ const List = ({ props }) => {
         const getListData = async () => {
             try {
                 await axios.get(API_URL + `?page=${number}`).then((res) => {
-                    console.log(res.data);
-                    if (!res.data.image) {
-                        console.log('이미지를 불러오는데 실패했습니다.');
-                    }
                     number++;
                     setNumber(number);
                     listData = [...listData, ...res.data];
@@ -32,7 +28,6 @@ const List = ({ props }) => {
         };
         getListData();
     }, [hitBottom]);
-    console.log(listData);
 
     const onScroll = () => {
         if (
@@ -49,12 +44,11 @@ const List = ({ props }) => {
             window.removeEventListener('scroll', onScroll);
         };
     }, []);
-    console.log(listData);
 
     const listItems = listData.map((item, i) => {
         return (
             <>
-                <ListDetail featureData={item} key={i} />
+                <ListDetail featureData={item} key={item.id} />
             </>
         );
     });

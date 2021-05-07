@@ -1,0 +1,45 @@
+@import '../../styles/reset.scss';
+@import '../../styles/Font.scss';
+
+.cart_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $montserrat;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 5rem;
+}
+
+.cartItem_container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    .cartItem_payment_wrap {
+        width: 25%;
+
+        .cartItem_payment {
+            padding: 1rem;
+            display: flex;
+            font-family: $montserrat;
+            justify-content: space-between;
+            background-color:#f5f5f5;
+        }
+
+        .cartItem_payment > p:first-child {
+            color: #424242;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 30px;
+            font-family: $sandolGodic;
+        }
+
+        .cartItem_payment > p:last-child {
+            color: #ff3f42;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+    }
+}
